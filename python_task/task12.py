@@ -1,2 +1,18 @@
-# Write a program that takes the email and password as input from a user and checks if they are equal to “admin@mail.com” and password is “Admin@123” , if so then print  “Login is Successful” and if not print “Invalid username or password”.
-# ONLY accept 3 tries after which it notifies you that you have been blocked.
+# Write a program that takes as input the speed of a car e.g 80. If the speed is less than 70, it should print “Ok”. 
+# Otherwise, for every 5 km/s above the speed limit (70),
+#  it should give the driver one demerit point and print the total number of demerit points.
+# For example, if the speed is 80, it should print: “Points: 2”. 
+# If the driver gets more than 12 points, the function should print: “License suspended”.
+speed_limit=70
+demerit_points=0
+speed=int(input("enter speed: "))
+if speed<=70:
+    print("ok")
+elif(speed>speed_limit):
+    demerit_points=1
+else:demerit_points=round((speed-speed_limit))*5
+if demerit_points>12:
+    print("license")
+else:
+    print(f"demerit_points{demerit_points}")
+    print(demerit_points)

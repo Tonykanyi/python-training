@@ -5,3 +5,7 @@
 # ***
 # ****
 # *****.....
+stars=int("enter your number: ")
+
+for number in range(1,stars ,+1):
+    print('*' * number)
